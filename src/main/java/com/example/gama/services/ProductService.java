@@ -33,6 +33,11 @@ public class ProductService {
 	public List<Product> getProductsByCategory(String category) {
 		
 		return repository.findProductByCategory(category);
+    }
+    
+	public Product getProductsById(Long idProduct) {
+		
+		return repository.findProductById(idProduct).get();
 	}
 
 }

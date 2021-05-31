@@ -27,13 +27,21 @@ public class ProductController{
         return mv;
     }
 
-    @GetMapping("/products/{category}")
+    @GetMapping("/products/category/{category}")
     public ModelAndView getProductsByCategory(@PathVariable(name = "category") String category)
     {
         ModelAndView mv = new ModelAndView("products");
-        List<Product> product = productService.getProductsByCategory(category);
-        mv.addObject("products", product);
+        mv.addObject("products", productService.getProductsByCategory(category));
         return mv;
     }
+
+    @GetMapping("/products/id/{idProduct}")
+    public ModelAndView getProductById(@PathVariable(name = "idProduct") Long idProduct)
+    {
+        ModelAndView mv = new ModelAndView("editProduct");
+        mv.addObject("products", productService.getProductsById(idProduct));
+        return mv;
+    }
+
 
 }

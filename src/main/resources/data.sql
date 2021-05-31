@@ -1,1 +1,3 @@
-INSERT INTO TB_PRODUCTS (url,name,description,category,price,stock) VALUES ('https://i.ibb.co/cL6kxFt/Candle.jpg','Vanilla Candle','Sweet and Soothing Candle with Natural Essences','Candles',35,3); 
+INSERT INTO TB_PRODUCTS (url,name,description,category,price,stock) VALUES ('https://i.ibb.co/cL6kxFt/Candle.jpg','Vanilla Candle','Sweet and Soothing Candle with Natural Essences','Candles',35.00,3); 
+INSERT INTO TB_PRODUCTS (url,name,description,category,price,stock) VALUES ('https://i.ibb.co/W5xQz9s/Candle-1.jpg','Sea Candle','Sweet and Soothing Candle with Natural Essences','Candles',35.00,3); 
+INSERT INTO TB_PRODUCTS (url,name,description,category,price,stock) VALUES ('https://i.ibb.co/7WzggnM/Candle-3.jpg','Lavender Candle','Sweet and Soothing Candle with Natural Essences','Candles',35.00,3); 
